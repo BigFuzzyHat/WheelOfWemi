@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            .columnInput {
+                display: flex;
+                flex-direction: column;
+            }
+            textarea {
+                font-size: 1.5em;
+            }
+        </style>
+    </head>
+    <body style="margin: 0; overflow: hidden;">
+        <canvas id="wemiCanvas" style="display: block; position: absolute;"></canvas>
+        <img id="spinner" src="spinner.png" style="display: none;" />
+        <img id="bg" src="bg.png" style="display: none;" />
+        <div style="position: absolute; right: 0px;">
+            <div>
+                <label for="wheelElements" class="columnInput">Wheel entries:</label>
+                <textarea id="wheelElements" class="columnInput" name="wheelElements" placeholder="Enter wheel entries here" rows="8" cols="40"></textarea>
+            </div>
+            <div>
+                <label for="wheelColours" class="columnInput">Colours:</label>
+                <textarea id="wheelColours" class="columnInput" name="wheelColours" placeholder="Enter wheel colours here" rows="8" cols="40"></textarea>
+            </div>
+            <div>
+                <label for="hideBackground">Hide background:</label>
+                <input id="hideBackground" name="hideBackground" type="checkbox">
+            </div>
+            <div>
+                <button id="btnDefaults">Restore defaults</button>
+            </div>
+        </div>
+        <script src="wemiwheel.js" defer></script>
+    </body>
+</html>
